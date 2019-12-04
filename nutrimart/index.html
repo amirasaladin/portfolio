@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>NUTRImart</title>
+    <!-- Favicon -->
+    <link rel=icon href='./img/favicon.png'>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="./css/bootstrap.css">
+    <!-- Styles -->
+    <link rel="stylesheet" href="./css/styles.css">
+    <!-- Owl CSS -->
+    <link rel="stylesheet" href="./css/owl.carousel.min.css">
+    <link rel="stylesheet" href="./css/owl.theme.default.min.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+    <!-- jQuery ui -->
+    <link rel="stylesheet" href="./css/jquery-ui.min.css">
+    <!-- AOS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <!-- Animate.css -->
+    <link rel="stylesheet" href="css/animate.css">
+</head>
+
+
+<body>
+    <div id="preloader"></div>
+    <div id="body-wrapper">
+        <div id="menu">
+            <div class="search-resp"></div>
+            <ul>
+                <li class="active"><a href="index.html">Home</a></li>
+                <li><a href="about.html">who we are</a></li>
+                <li><a href="products.html">our products</a></li>
+                <li><a href="diets.html">diets</a></li>
+                <li><a href="news-events.html">news & events</a></li>
+                <li><a href="contact-us.html">contact</a></li>
+            </ul>
+
+            <div class="only-res">
+                <p><a href="#">facebook</a><span class="py-1">&#8226;</span><a href="#">instagram</a>
+                </p>
+            </div>
+        </div>
+
+        <div id="explore-more">
+            <div class="leaf"><img src="./img/leaf-black.png" alt="leaf"></div>
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="row">
+                            <div id="logo"><img src="./img/logo-black.png" alt="logo"></div>
+                            <div id="res-menu">
+                                <div class="my-list">my list</div>
+                                <div class="menu-btn"></div>
+                            </div>
+                            <div id="search-content">
+                                <form class="form-inline md-form form-sm active-cyan-0 pb-3 ml-auto" id="search-form">
+                                    <input class="form-control form-control-sm search" id="search" type="text"
+                                        placeholder="Search..." aria-label="Search">
+                                    <div class="input-group-append">
+                                        <button type="submit" id="search-btn"></button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-1">
+                        <div class="col-bg">
+                            <div class="menu-col">
+                                <div class="menu-btn"></div>
+                                <div class="my-list"><a href="./cart.html">my list</a></div>
+                                <img src="./img/logo.png" alt="light-logo" width="43px" height="61px">
+                                <div class="social-links">
+                                    <p class="social"><a href="#">facebook</a><span class="py-1">&#8226;</span><a
+                                            href="#">instagram</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container-fluid">
+            <div id='first-section-cont'>
+                <!-- THE ACTUAL CONTENT -->
+                <div class="title-div">
+                    <div class="title-box">
+                        <div id="title-1" data-aos="fade-left" data-aos-easing="ease">eat RIGHT, FEEL RIGHT</div>
+                    </div>
+                </div>
+                <div class="animateSlideUp img-1" data-scroll-speed="1"><img src="./img/girl.jpg" alt=""></div>
+                <p class="text" data-aos="fade-in" data-aos-duration="1000">Lorem, ipsum dolor sit amet consectetur
+                    adipisicing elit. Assumenda,
+                    laudantium
+                    quas adipisci corporis consectetur impedit dignissimos. Placeat officia totam porro.</p>
+                <a href="#care" class="explore-more">explore more</a>
+            </div>
+        </div>
+
+
+        <div id="care">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-6">
+                        <img src="./img/pan.jpg" alt="pan">
+                    </div>
+                    <div class="col-md-6 d-flex flex-column align-items-center justify-content-center">
+
+                        <div class="text-cont">
+                            <h1 class="h1 mb-4">We do care about your health</h1>
+                            <p class="text mb-4" data-aos="fade-in" data-aos-duration="1000">Lorem, ipsum dolor sit amet
+                                consectetur adipisicing elit. Assumenda,
+                                laudantium
+                                quas adipisci corporis consectetur impedit dignissimos. Placeat officia totam porffro.
+                            </p>
+                            <div class="section-link link1">
+                                <a href="#" class="explore-more">who we are</a>
+                                <div></div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <section id="products">
+            <div class="container-fluid" data-aos="fade-up" data-aos-duration="2000">
+                <div class="row">
+                    <div class="col-lg-4 d-flex justify-contnet-center align-items-center">
+                        <div class="products-text">
+                            <h1 class="h1">our products</h1>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Explicabo hic animi sapiente
+                                perferendis qui impedit reprehenderit modi molestiae laudantium cum.</p>
+                            <div class="section-link link2">
+                                <a href="#" class="explore-more">all products</a>
+                                <div></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-8">
+                        <div class="owl-carousel owl-theme" id="owl-products">
+                            <!-- DIV WITH CLASS ITEM ID INCREMENTS -->
+                            <div class="item" id="1">
+                                <div class="cont">
+                                    <div class="products-img"><img src="./img/products/01.jpg" alt="plate1">
+                                        <div></div>
+                                    </div>
+                                    <h3 class="h3">Product Name</h3>
+                                    <small>product company</small>
+                                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Animi culpa obcaecati
+                                        error
+                                        magnam sunt iste saepe quia iusto deleniti porro?</p>
+                                    <div class="section-link">
+                                        <a href="#" class="explore-more">add to shopping list</a>
+                                        <div></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item" id="2">
+                                <div class="cont">
+                                    <div class="products-img"><img src="./img/products/02.jpg" alt="plate1">
+                                        <div></div>
+                                    </div>
+                                    <h3 class="h3">Product Name</h3>
+                                    <small>product company</small>
+                                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Animi culpa obcaecati
+                                        error
+                                        magnam sunt iste saepe quia iusto deleniti porro?</p>
+                                    <div class="section-link">
+                                        <a href="#" class="explore-more">add to shopping list</a>
+                                        <div></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item" id="3">
+                                <div class="cont">
+                                    <div class="products-img"><img src="./img/products/03.jpg" alt="plate1">
+                                        <div></div>
+                                    </div>
+                                    <h3 class="h3">Product Name</h3>
+                                    <small>product company</small>
+                                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Animi culpa obcaecati
+                                        error
+                                        magnam sunt iste saepe quia iusto deleniti porro?</p>
+                                    <div class="section-link">
+                                        <a href="#" class="explore-more">add to shopping list</a>
+                                        <div></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item" id="4">
+                                <div class="cont">
+                                    <div class="products-img"><img src="./img/products/04.jpg" alt="plate1">
+                                        <div></div>
+                                    </div>
+                                    <h3 class="h3">Product Name</h3>
+                                    <small>product company</small>
+                                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Animi culpa obcaecati
+                                        error
+                                        magnam sunt iste saepe quia iusto deleniti porro?</p>
+                                    <div class="section-link">
+                                        <a href="#" class="explore-more">add to shopping list</a>
+                                        <div></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item" id="5">
+                                <div class="cont">
+                                    <div class="products-img"><img src="./img/products/05.jpg" alt="plate1">
+                                        <div></div>
+                                    </div>
+                                    <h3 class="h3">Product Name</h3>
+                                    <small>product company</small>
+                                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Animi culpa obcaecati
+                                        error
+                                        magnam sunt iste saepe quia iusto deleniti porro?</p>
+                                    <div class="section-link">
+                                        <a href="#" class="explore-more">add to shopping list</a>
+                                        <div></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item" id="6">
+                                <div class="cont">
+                                    <div class="products-img"><img src="./img/products/06.jpg" alt="plate1">
+                                        <div></div>
+                                    </div>
+                                    <h3 class="h3">Product Name</h3>
+                                    <small>product company</small>
+                                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Animi culpa obcaecati
+                                        error
+                                        magnam sunt iste saepe quia iusto deleniti porro?</p>
+                                    <div class="section-link">
+                                        <a href="#" class="explore-more">add to shopping list</a>
+                                        <div></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+        <section id="diets" class="clearfix">
+            <div class="text-lg-cont">
+                <div class="text-cont-diets">
+                    <h1 class="mb-4 h1" id="title-2" data-aos="fade-left" data-aos-easing="ease" >Confused between different kinds of diets</h1>
+                    <p class="mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit modi expedita odit
+                        perferendis ea beatae dolore repudiandae aut dignissimos sed?</p>
+                    <div class="section-link link3">
+                        <a href="#" class="explore-more">find the best</a>
+                        <div class="linkBg"></div>
+                    </div>
+                </div>
+            </div>
+            <div style="min-height: 300px;">
+                <div class="intro-img img-2"><img src="./img/plate.jpg"/></div>
+            </div>
+        </section>
+
+        <section id="blog">
+            <div class="container-fluid" data-aos="fade-up" data-aos-duration="2000">
+                <div class="col-12">
+                    <div class="h1 section-title">our blog</div>
+                    <div id="blog-cards">
+                        <section>
+                            <div class="card-cont">
+                                <div class="blog-card" style="background-image: url('./img/blog/blog-1.jpg')"></div>
+                                <div class="color-overlay">
+                                    <div class="card-overlay-text">
+                                        <div class="container">
+                                            <p class="card-date">17 July 2019</p>
+                                            <p class="card-text">What happens in your body after eating fast
+                                                food</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                        <section>
+                            <div class="card-cont">
+                                <div class="blog-card" style="background-image: url('./img/blog/blog-2.jpg')"></div>
+                                <div class="color-overlay">
+                                    <div class="card-overlay-text">
+                                        <div class="container">
+                                            <p class="card-date">17 July 2019</p>
+                                            <p class="card-text">What happens in your body after eating fast
+                                                food</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div id="contact-us">
+            <div class="col-md-12 ml-md-5">
+                <div class="row">
+                    <div class="col-sm-6 col-md-7 contact-form">
+                        <div class="container">
+                            <h1 class="h1 section-title">contact us</h1>
+                            <form action="">
+                                <div class="row">
+                                    <div class="col-sm-11 col-md-5">
+
+                                        <input type="text" placeholder="Name">
+                                        <input type="email" placeholder="Email">
+                                        <input type="text" placeholder="Subject">
+
+                                    </div>
+                                    <div class="col-sm-11 col-md-5">
+                                        <textarea name="" id="" cols="30" rows="10" placeholder="Message"></textarea>
+                                        <div class="default-btn mb-4">
+                                            <input type="submit" value="send message" data-aos="fade-in"
+                                                data-aos-duration="1000">
+                                            <div></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <!-- <div class="col-md-1"></div> -->
+                    <div class="col-sm-6 col-md-5">
+                        <div class="section-img"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer id="footer">
+            <div class="container-fluid pt-4 pl-5">
+                <p class="copy-rights">© 2019 NUTRIMART ALL RIGHTS RESERVED. Website designed and developed by Road9
+                    Media
+                    Road9 Media</p>
+            </div>
+        </footer>
+    </div>
+
+    <!-- jQuery -->
+    <script src="./js/jquery-3.4.1.js"></script>
+    <!-- jQuery ui -->
+    <script src="./js/jquery-ui.min.js"></script>
+    <!-- ScrollIntoView -->
+    <script src="./js/jquery.scrollintoview.min.js"></script>
+    <!-- Popper.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <!-- Bootstrap -->
+    <script src="./js/bootstrap.js"></script>
+    <!-- Owl Carousel -->
+    <script src="./js/owl.carousel.min.js"></script>
+    <!-- AOS -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <!-- wow.js -->
+    <script src="js/wow.min.js"></script>
+    <!-- ScrollMagic -->
+    <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></script>
+    <!-- Custom Script -->
+    <script src="./js/script.js"></script>
+
+</body>
+
+</html>

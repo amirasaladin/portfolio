@@ -1,0 +1,1543 @@
+#preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  min-height: 100%;
+  height: 100%;
+  z-index: 1000;
+  overflow: visible;
+  background: #fff url("../img/preloader.gif") no-repeat center center;
+}
+
+.special-container {
+  padding-right: 0;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+@media (min-width: 768px) {
+  .special-container {
+    width: 750px;
+  }
+}
+
+@media (min-width: 992px) {
+  .special-container {
+    width: 970px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .special-container {
+    width: 1170px;
+  }
+}
+
+@font-face {
+  font-family: 'GE SS Two';
+  font-style: normal;
+  font-weight: normal;
+  src: local("Tangerine"), url("../fonts/GE SS Two Medium.otf") format("opentype");
+}
+
+@font-face {
+  font-family: 'GE SS Two';
+  font-style: normal;
+  font-weight: lighter;
+  src: local("Tangerine"), url("../fonts/GE SS Two Light.otf") format("opentype");
+}
+
+@font-face {
+  font-family: 'GE SS Two';
+  font-style: normal;
+  font-weight: bold;
+  src: local("Tangerine"), url("../fonts/GE SS Two Bold.otf") format("opentype");
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+html,
+body {
+  font-family: 'Lato', sans-serif;
+  margin: 0 !important;
+  padding: 0 !important;
+  overflow-x: hidden;
+  width: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+#body-wrapper {
+  position: relative;
+  overflow: hidden;
+  overflow-x: hidden;
+}
+
+.t98 {
+  font-size: 98px;
+}
+
+.t82 {
+  font-size: 82px;
+}
+
+.t66 {
+  font-size: 66px;
+}
+
+.t48 {
+  font-size: 48px;
+}
+
+.t50, #about-diabetes h1 {
+  font-size: 50px;
+}
+
+.t45 {
+  font-size: 45px;
+}
+
+.t40 {
+  font-size: 40px;
+}
+
+.t34 {
+  font-size: 34px;
+}
+
+.t29 {
+  font-size: 29px;
+}
+
+.t27 {
+  font-size: 27px;
+}
+
+.t24 {
+  font-size: 24px;
+}
+
+.t20, #about-diabetes .text-section span {
+  font-size: 20px;
+}
+
+.t18 {
+  font-size: 18px;
+}
+
+.t16 {
+  font-size: 16px;
+}
+
+.t13 {
+  font-size: 13px;
+}
+
+.t11 {
+  font-size: 11px;
+}
+
+@media (max-width: 992px) {
+  .t98 {
+    font-size: 88px;
+  }
+  .t82 {
+    font-size: 72px;
+  }
+  .t66 {
+    font-size: 56px;
+  }
+  .t48 {
+    font-size: 38px;
+  }
+  .t50, #about-diabetes h1 {
+    font-size: 45px;
+  }
+  .t45 {
+    font-size: 40px;
+  }
+  .t40 {
+    font-size: 35px;
+  }
+  .t34 {
+    font-size: 29px;
+  }
+  .t29 {
+    font-size: 24px;
+  }
+  .t27 {
+    font-size: 22px;
+  }
+  .t24 {
+    font-size: 19px;
+  }
+  .t20, #about-diabetes .text-section span {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 768px) {
+  .t98 {
+    font-size: 83px;
+  }
+  .t82 {
+    font-size: 67px;
+  }
+  .t66 {
+    font-size: 51px;
+  }
+  .t48 {
+    font-size: 33px;
+  }
+  .t50, #about-diabetes h1 {
+    font-size: 40px;
+  }
+  .t45 {
+    font-size: 35px;
+  }
+  .t40 {
+    font-size: 30px;
+  }
+  .t34 {
+    font-size: 27px;
+  }
+}
+
+.a-tag:hover, .def-btn a:hover, .section-link a:hover, #header .header-items div a:hover:nth-of-type(1), #menu .menu-cont ul li a:hover, #hero .item .hero-overlay .text .def-btn a:hover, #our-story .section-link a:hover, #donate .section-text .section-link a:hover, #what-we-do .section-link a:hover, #donate-action .def-btn a:hover, footer .footer-section-one ul li a:hover, .a-tag:visited, .def-btn a:visited, .section-link a:visited, #header .header-items div a:visited:nth-of-type(1), #menu .menu-cont ul li a:visited, #hero .item .hero-overlay .text .def-btn a:visited, #our-story .section-link a:visited, #donate .section-text .section-link a:visited, #what-we-do .section-link a:visited, #donate-action .def-btn a:visited, footer .footer-section-one ul li a:visited, .a-tag:active, .def-btn a:active, .section-link a:active, #header .header-items div a:active:nth-of-type(1), #menu .menu-cont ul li a:active, #hero .item .hero-overlay .text .def-btn a:active, #our-story .section-link a:active, #donate .section-text .section-link a:active, #what-we-do .section-link a:active, #donate-action .def-btn a:active, footer .footer-section-one ul li a:active {
+  text-decoration: none;
+}
+
+.def-btn {
+  border-radius: 37px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.15);
+  box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.15);
+}
+
+.def-btn a {
+  color: #fff;
+}
+
+.section-margins, #our-story, #stat, #about-diabetes {
+  margin-top: 150px;
+  margin-bottom: 150px;
+}
+
+@media (max-width: 768px) {
+  .section-margins, #our-story, #stat, #about-diabetes {
+    margin-top: 125px;
+    margin-bottom: 125px;
+  }
+}
+
+.section-padding, #donate, #what-we-do, #stories, #events, #donate-action {
+  padding-top: 150px;
+  padding-bottom: 150px;
+}
+
+@media (max-width: 768px) {
+  .section-padding, #donate, #what-we-do, #stories, #events, #donate-action {
+    padding-top: 125px;
+    padding-bottom: 125px;
+  }
+}
+
+.section-text {
+  position: relative;
+}
+
+.section-text h1 {
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+.section-text .section-head:before {
+  content: '';
+  position: absolute;
+  z-index: -1;
+  top: -30px;
+  left: -30px;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  opacity: 0.3;
+}
+
+.section-text .section-head h6 {
+  text-transform: uppercase;
+}
+
+.section-text .section-head h2 {
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+.section-text p {
+  font-weight: lighter;
+}
+
+.section-link {
+  font-weight: 900;
+  text-transform: uppercase;
+  position: relative;
+  margin-left: 20px;
+  margin-top: 50px;
+}
+
+.section-link:before {
+  content: '';
+  width: 70px;
+  height: 70px;
+  margin-top: auto;
+  margin-bottom: auto;
+  top: 0;
+  bottom: 0;
+  position: absolute;
+  z-index: -1;
+  left: -20px;
+  border-radius: 50%;
+}
+
+.box-shadow {
+  -webkit-box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.15);
+  box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.15);
+}
+
+.text-shadow, #pages-header h1 {
+  text-shadow: 0px 3px 10px rgba(0, 0, 0, 0.16);
+}
+
+.section-img {
+  background-repeat: no-repeat;
+}
+
+.img-overlay {
+  position: absolute;
+}
+
+.card {
+  border-radius: 10px;
+  border: none;
+  background-color: #fff;
+  -webkit-box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.15);
+  box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.15);
+}
+
+.card .card-img-top {
+  height: 180px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+  border-radius: 10px 10px 0 0;
+}
+
+.card .card-header {
+  background-color: #40B1E5;
+  height: 54px;
+  border-radius: 10px;
+  border: none;
+  text-transform: uppercase;
+  color: #fff;
+  position: relative;
+}
+
+.card .card-header .photo {
+  position: absolute;
+  right: 50px;
+  bottom: -50%;
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+}
+
+.card .card-header .photo img {
+  position: absolute;
+  z-index: 5;
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+}
+
+.card .card-header .photo::after {
+  content: '';
+  position: absolute;
+  z-index: 2;
+  width: 150px;
+  height: 150px;
+}
+
+.card .card-header .photo::before {
+  content: '';
+  position: absolute;
+  right: -5px;
+  bottom: -5px;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 2px solid #FAA41A;
+  background-color: #fff;
+}
+
+.card .card-body .date {
+  color: #A8A8A8;
+  font-size: 13px;
+}
+
+.card .card-body p {
+  font-weight: bold;
+}
+
+.card .card-body .read-more {
+  font-size: 11px;
+  font-weight: 900;
+  text-transform: uppercase;
+  color: #FF4713;
+}
+
+.card .card-body .read-more:hover {
+  color: #FF4713;
+}
+
+.owl-nav-cont {
+  position: absolute;
+}
+
+.owl-nav-cont .next {
+  background-image: url("../img/next.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 14px;
+  width: 14px;
+}
+
+.owl-nav-cont .prev {
+  background-image: url("../img/prev.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 14px;
+  width: 14px;
+}
+
+.owl-nav-cont .owl-nav button {
+  background: none;
+  border: none;
+}
+
+@media (max-width: 576px) {
+  .owl-nav-cont .owl-dots {
+    display: none;
+  }
+}
+
+.owl-nav-cont .owl-dots button {
+  background-color: #ADADAD;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  margin: 0 4px;
+}
+
+.owl-nav-cont .owl-dots button.active {
+  background-color: #40B1E5;
+}
+
+.background, #pages-header, #about-diabetes section .img {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+#header {
+  background-color: #fff;
+  height: 8vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  width: 100%;
+}
+
+#header .header-items {
+  width: 300px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media (max-width: 576px) {
+  #header .header-items {
+    width: 240px;
+  }
+}
+
+#header .header-items #open {
+  cursor: pointer;
+}
+
+#header .header-items div {
+  background: #FF4713;
+  width: 150px;
+  height: 35px;
+  border-radius: 26px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#header .header-items div a:nth-of-type(1) {
+  color: #fff;
+}
+
+#header .header-items #ar {
+  font-family: 'GE SS Two';
+  color: #40B1E5;
+  font-size: 17px;
+}
+
+#menu {
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  background: rgba(0, 0, 0, 0.5);
+  min-height: 100vh;
+  min-width: 100vw;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#menu .menu-cont {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #40B1E5;
+  width: 600px;
+  height: 600px;
+  border-radius: 50%;
+  position: absolute;
+}
+
+#menu .menu-cont #close {
+  font-weight: 900;
+  color: #fff;
+  text-align: center;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+#menu .menu-cont ul li:not(:nth-last-of-type(1)) {
+  font-weight: bold;
+}
+
+#menu .menu-cont ul li {
+  list-style: none;
+  margin: 15% 0;
+  text-align: center;
+  position: relative;
+  z-index: 2;
+}
+
+#menu .menu-cont ul li a {
+  position: relative;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 18px;
+}
+
+#menu .menu-cont ul li a.active:before {
+  content: "";
+  position: absolute;
+  bottom: 4px;
+  left: -22px;
+  top: 0;
+  bottom: 0;
+  margin-top: auto;
+  margin-bottom: auto;
+  -webkit-transform: translate(35%, 0);
+  -moz-transform: translate(35%, 0);
+  width: 34px;
+  height: 34px;
+  z-index: -1;
+  border-radius: 50%;
+  -webkit-transform-origin: 0 0;
+          transform-origin: 0 0;
+  background-color: #FAA41A;
+}
+
+#menu .menu-cont ul li a:before {
+  content: "";
+  position: absolute;
+  bottom: 4px;
+  left: -22px;
+  top: 0;
+  bottom: 0;
+  margin-top: auto;
+  margin-bottom: auto;
+  -webkit-transform: translate(35%, 0);
+  -moz-transform: translate(35%, 0);
+  width: 34px;
+  height: 34px;
+  z-index: -1;
+  border-radius: 50%;
+  -webkit-transform-origin: 0 0;
+          transform-origin: 0 0;
+  background-color: #FAA41A;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  opacity: 0;
+}
+
+#menu .menu-cont ul li a.active:before {
+  content: "";
+  position: absolute;
+  bottom: 4px;
+  left: -22px;
+  top: 0;
+  bottom: 0;
+  margin-top: auto;
+  margin-bottom: auto;
+  -webkit-transform: translate(35%, 0);
+  -moz-transform: translate(35%, 0);
+  width: 34px;
+  height: 34px;
+  z-index: -1;
+  border-radius: 50%;
+  -webkit-transform-origin: 0 0;
+          transform-origin: 0 0;
+  background-color: #FAA41A;
+  opacity: 1;
+}
+
+#menu .menu-cont ul li a:hover:before {
+  opacity: 1;
+}
+
+#menu .menu-cont ul li a.def-btn:before {
+  opacity: 0;
+}
+
+#menu .menu-cont ul li .def-btn {
+  background-color: #FF4713;
+  border-radius: 37px;
+  width: 90%;
+  height: 45px;
+}
+
+#pages-header {
+  width: 100vw;
+  height: 450px;
+  position: relative;
+}
+
+#pages-header:after {
+  content: '';
+  width: inherit;
+  height: inherit;
+  position: absolute;
+  z-index: 2;
+  background: -webkit-gradient(linear, left top, right top, from(#5dbde8), to(rgba(255, 255, 255, 0)));
+  background: linear-gradient(90deg, #5dbde8 0%, rgba(255, 255, 255, 0) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#5dbde8", endColorstr="#ffffff", GradientType=1);
+}
+
+#pages-header img:nth-of-type(odd) {
+  position: absolute;
+  left: 0;
+  top: 0;
+  max-height: 100%;
+  z-index: 3;
+}
+
+#pages-header img:nth-of-type(even) {
+  position: absolute;
+  right: 0;
+  top: 0;
+  max-height: 100%;
+  z-index: 3;
+}
+
+#pages-header h1 {
+  position: absolute;
+  top: 50%;
+  bottom: 50%;
+  margin-top: auto;
+  margin-bottom: auto;
+  z-index: 3;
+  color: #fff;
+  font-weight: 900;
+}
+
+#hero {
+  margin-top: 8vh;
+  position: relative;
+}
+
+#hero .item {
+  max-height: 92vh;
+  min-height: 92vh;
+  position: relative;
+}
+
+#hero .item .hero-img {
+  min-height: 92vh;
+  min-width: 100vw;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+#hero .item .hero-overlay img {
+  width: 50%;
+  height: auto;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+@media (max-width: 992px) {
+  #hero .item .hero-overlay img {
+    width: 60%;
+  }
+}
+
+@media (max-width: 768px) {
+  #hero .item .hero-overlay img {
+    width: 80%;
+  }
+}
+
+@media (max-width: 576px) {
+  #hero .item .hero-overlay img {
+    width: 100%;
+  }
+}
+
+#hero .item .hero-overlay .text {
+  width: 38%;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 60%;
+}
+
+@media (max-width: 992px) {
+  #hero .item .hero-overlay .text {
+    left: 50%;
+    width: 50%;
+  }
+}
+
+@media (max-width: 768px) {
+  #hero .item .hero-overlay .text {
+    left: 30%;
+    width: 80%;
+  }
+}
+
+@media (max-width: 576px) {
+  #hero .item .hero-overlay .text {
+    left: 15%;
+    width: 80%;
+  }
+}
+
+#hero .item .hero-overlay .text h1 {
+  font-weight: 900;
+  text-transform: uppercase;
+  color: #fff;
+  margin: 0;
+}
+
+#hero .item .hero-overlay .text h3 {
+  font-weight: 900;
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+#hero .item .hero-overlay .text .def-btn {
+  background-color: #FAA41A;
+  border-radius: 37px;
+  width: 60%;
+  height: 10vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 50px;
+}
+
+#hero .item .hero-overlay .text .def-btn a {
+  color: #fff;
+  text-transform: uppercase;
+}
+
+#hero .owl-nav-cont {
+  right: 60px;
+  z-index: 3;
+  bottom: 10%;
+}
+
+#hero .owl-nav-cont .owl-dots button {
+  background-color: #fff;
+}
+
+#hero .owl-nav-cont .owl-dots button.active {
+  background-color: #40B1E5;
+}
+
+@media (max-width: 768px) {
+  #our-story .container {
+    padding: 0;
+  }
+}
+
+#our-story .section-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 100%;
+}
+
+@media (max-width: 992px) {
+  #our-story .section-text {
+    margin-top: 32px;
+  }
+}
+
+#our-story .section-text .section-head {
+  -webkit-transform: translateX(-20%);
+          transform: translateX(-20%);
+}
+
+@media (max-width: 576px) {
+  #our-story .section-text .section-head {
+    -webkit-transform: translateX(-40%);
+            transform: translateX(-40%);
+  }
+}
+
+#our-story .section-text .section-head:before {
+  background-color: #FAA41A;
+}
+
+#our-story .section-text .section-head h6 {
+  color: #40B1E5;
+}
+
+#our-story .section-link:before {
+  border: 1px solid #FAA41A;
+}
+
+#our-story .section-link a {
+  color: #40B1E5;
+}
+
+#our-story .section-link a:hover {
+  color: #40B1E5;
+}
+
+#our-story .section-img {
+  height: 445px;
+  background-position: top right;
+  background-size: cover;
+}
+
+#stat h1 {
+  color: #40B1E5;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+#stat .stat-cont {
+  border-radius: 50px;
+  width: 180px;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+@media (max-width: 992px) {
+  #stat .stat-cont {
+    margin-bottom: 60px;
+  }
+}
+
+#stat .stat-cont:after {
+  content: '';
+  background-color: #fff;
+  height: 125px;
+  width: 90%;
+  position: absolute;
+  z-index: -1;
+  left: 0;
+  bottom: 50px;
+}
+
+#stat .stat-cont:before {
+  content: '';
+  width: 150px;
+  height: 150px;
+  position: absolute;
+  z-index: -2;
+  border-radius: 50%;
+  border: 2px solid #FAA41A;
+  bottom: 55px;
+  right: -30px;
+}
+
+#stat .stat-cont h1 {
+  font-weight: 900;
+  color: #94D9F8;
+  position: relative;
+}
+
+#stat .stat-cont p {
+  -webkit-transform: translateY(-50px);
+          transform: translateY(-50px);
+  line-height: 1;
+  font-weight: lighter;
+}
+
+#donate {
+  background-color: #94D9F8;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 80vh;
+  height: auto;
+}
+
+#donate .section-text {
+  position: relative;
+  z-index: 2;
+  width: 65%;
+}
+
+@media (max-width: 992px) {
+  #donate .section-text {
+    width: 100%;
+    margin-top: 200px;
+  }
+}
+
+@media (max-width: 576px) {
+  #donate .section-text {
+    margin-top: 150px;
+  }
+}
+
+#donate .section-text h1 {
+  font-weight: 900;
+  color: #095679;
+  text-transform: uppercase;
+}
+
+#donate .section-text p {
+  font-weight: lighter;
+}
+
+#donate .section-text .section-link {
+  margin-top: 50px;
+  position: relative;
+}
+
+#donate .section-text .section-link:before {
+  background-color: #FAA41A;
+  z-index: 1;
+}
+
+#donate .section-text .section-link a {
+  position: relative;
+  z-index: 2;
+  color: black;
+}
+
+#donate .section-text .section-link a:hover {
+  color: black;
+}
+
+#donate img:nth-last-of-type(even) {
+  right: 0;
+  bottom: 0;
+  max-height: 70%;
+}
+
+@media (max-width: 768px) {
+  #donate img:nth-last-of-type(even) {
+    max-width: 40%;
+  }
+}
+
+@media (max-width: 576px) {
+  #donate img:nth-last-of-type(even) {
+    max-width: 100%;
+  }
+}
+
+#donate img:nth-last-of-type(odd) {
+  right: 0;
+  top: -50px;
+  max-width: 70vw;
+}
+
+#what-we-do {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+  min-height: 80vh;
+  height: auto;
+}
+
+#what-we-do::after {
+  content: '';
+  background-color: rgba(250, 164, 26, 0.4);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+#what-we-do .img-overlay {
+  max-height: 100%;
+  top: 0;
+}
+
+@media (max-width: 768px) {
+  #what-we-do .img-overlay {
+    height: 85%;
+  }
+}
+
+@media (max-width: 576px) {
+  #what-we-do .img-overlay {
+    height: 95%;
+  }
+}
+
+#what-we-do .section-text {
+  position: relative;
+  z-index: 2;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 100%;
+  width: 40%;
+}
+
+@media (max-width: 768px) {
+  #what-we-do .section-text {
+    width: 80%;
+  }
+}
+
+@media (max-width: 576px) {
+  #what-we-do .section-text {
+    width: 100%;
+  }
+}
+
+#what-we-do .section-text .section-head:before {
+  background-color: #fff;
+}
+
+#what-we-do .section-text .section-head h6 {
+  color: #fff;
+}
+
+#what-we-do .section-text p {
+  color: #fff;
+  line-height: 2;
+  font-weight: normal;
+}
+
+#what-we-do .section-link:before {
+  border: 1px solid #fff;
+}
+
+#what-we-do .section-link a {
+  color: #fff;
+}
+
+#what-we-do .section-link a:hover {
+  color: #fff;
+}
+
+#what-we-do .section-img {
+  height: 445px;
+  background-position: top right;
+  background-size: cover;
+}
+
+#stories {
+  background-color: #EBEBEB;
+  position: relative;
+  min-height: 80vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#stories:after {
+  content: '';
+  background-image: url("../img/stories.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 300px;
+  height: 100%;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+}
+
+#stories .text-cont {
+  position: relative;
+  max-width: 340px;
+  z-index: 2;
+}
+
+@media (max-width: 992px) {
+  #stories .text-cont {
+    margin-bottom: 30px;
+  }
+}
+
+#stories .text-cont h1,
+#stories .text-cont h2,
+#stories .text-cont p {
+  margin: 0;
+}
+
+#stories .text-cont h1,
+#stories .text-cont h2 {
+  text-transform: uppercase;
+  font-weight: 900;
+  text-align: right;
+}
+
+#stories .text-cont h1 {
+  color: #FAA41A;
+}
+
+#stories .text-cont h2 {
+  color: #40B1E5;
+}
+
+#stories .text-cont p:nth-of-type(1):before {
+  content: '';
+}
+
+#stories .text-cont p:nth-last-of-type(1) {
+  text-transform: capitalize;
+}
+
+#stories .item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  height: 300px;
+  margin-bottom: 20px;
+}
+
+#stories .section-link {
+  margin: 0;
+}
+
+#stories .section-link a {
+  color: #40B1E5;
+}
+
+#stories .section-link a:hover {
+  color: #40B1E5;
+}
+
+#stories .owl-nav-cont {
+  right: 15px;
+  z-index: 3;
+}
+
+#events {
+  background-image: url("../img/Shapes/events-overlay.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 30vw;
+}
+
+#events h1 {
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+}
+
+@media (max-width: 576px) {
+  #events h1 {
+    max-width: 60%;
+  }
+}
+
+#events .section-text {
+  position: relative;
+}
+
+@media (max-width: 576px) {
+  #events .section-text .section-link {
+    margin-bottom: 100px;
+  }
+}
+
+#events .section-text .section-link:before {
+  border: 1px solid #FAA41A;
+}
+
+#events .section-text .section-link a {
+  color: #40B1E5;
+}
+
+#events .section-text .section-link a:hover {
+  color: #40B1E5;
+}
+
+#events .item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media (max-width: 992px) {
+  #events .item .card {
+    max-width: 80%;
+  }
+}
+
+#donate-action {
+  background-color: #FAA41A;
+}
+
+#donate-action .btn-cont {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media (max-width: 992px) {
+  #donate-action .btn-cont {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    margin-top: 30px;
+  }
+}
+
+#donate-action .def-btn {
+  background-color: #fff;
+  width: 250px;
+  height: 74px;
+}
+
+#donate-action .def-btn a {
+  color: #FAA41A;
+  text-transform: uppercase;
+}
+
+footer {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+footer .footer-section-one {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  background-color: #16343C;
+}
+
+@media (max-width: 992px) {
+  footer .footer-section-one #footer-contact-info {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+  }
+}
+
+@media (max-width: 768px) {
+  footer .footer-section-one #footer-contact-info {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    margin-top: 32px;
+  }
+}
+
+@media (max-width: 992px) {
+  footer .footer-section-one #footer-links {
+    display: none;
+  }
+}
+
+footer .footer-section-one img {
+  margin-right: 16px;
+}
+
+footer .footer-section-one h6 {
+  text-transform: uppercase;
+  font-weight: 900;
+}
+
+footer .footer-section-one ul {
+  -moz-column-count: 2;
+  -moz-column-gap: 16px;
+  -webkit-column-count: 2;
+  -webkit-column-gap: 20px;
+  column-count: 2;
+  -webkit-column-gap: 16px;
+          column-gap: 16px;
+}
+
+footer .footer-section-one ul li a {
+  color: rgba(255, 255, 255, 0.5);
+  text-transform: capitalize;
+  font-size: 13px;
+}
+
+footer .footer-section-one ul li a:hover {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+footer p:first-of-type {
+  font-size: 12px;
+  line-height: 2;
+}
+
+footer p {
+  font-size: 13px;
+  margin: 0;
+}
+
+footer .footer-section-two {
+  padding: 15px 0;
+  background-color: #1A2E34;
+}
+
+footer .footer-section-two .donate-with {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media (max-width: 992px) {
+  footer .footer-section-two .donate-with {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    margin-top: 16px;
+  }
+}
+
+#our-story-page #stat .stat-cont {
+  -webkit-transform: scale(0.8);
+          transform: scale(0.8);
+}
+
+#our-story-page #stat .stat-cont:before {
+  border: 2px solid #FF4713;
+}
+
+#our-story-page #stat .text-section {
+  position: relative;
+}
+
+#our-story-page #stat .text-section p {
+  padding: 0 64px 64px 64px;
+}
+
+#about-diabetes h1 {
+  color: #40B1E5;
+  width: 50%;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+#about-diabetes .text-section p {
+  color: #5D5D5D;
+}
+
+#about-diabetes .text-section span {
+  font-weight: bold;
+  margin-right: 5px;
+  color: #000000;
+}
+
+#about-diabetes section .img {
+  min-width: 50vmin;
+  height: 50vmin;
+  border-radius: 50%;
+  background-image: url("../img/3-About Diabetes/blood-sugar-chronic-diabetes.jpg");
+}
+
+#about-diabetes section:nth-of-type(odd) {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  width: 75%;
+}
+
+#about-diabetes section:nth-of-type(odd) .img {
+  background-image: url("../img/3-About Diabetes/blood-sugar-chronic-diabetes.jpg");
+}
+
+#about-diabetes section:nth-of-type(odd) h1 {
+  -webkit-transform: translateX(-30%);
+          transform: translateX(-30%);
+}
+
+#about-diabetes section:nth-of-type(odd) .text-card {
+  -webkit-transform: translateX(-10%);
+          transform: translateX(-10%);
+}
+
+#about-diabetes .text-card {
+  background: #FAA41A;
+  padding: 32px;
+  border-radius: 10px;
+}
+
+#about-diabetes .text-card b {
+  color: #97630F;
+}
+
+#about-diabetes .text-card p {
+  color: #fff;
+}
+/*# sourceMappingURL=style.css.map */

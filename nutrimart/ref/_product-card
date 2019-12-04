@@ -1,0 +1,88 @@
+.container -------------------------------
+    .row ---------------------------------
+<div class="col-lg-6">
+    <div class="product-item d-flex justify-content-center align-items-center">
+        <div class="cont">
+            <div class="products-img"><img
+                    src="./img/products/04.jpg"
+                    alt="plate1"></div>
+            <h4 class="h4">Product Name</h4>
+            <small>product company</small>
+            <p>Lorem ipsum, dolor sit amet
+                consectetur adipisicing elit. Animi
+                culpa obcaecati
+                error
+                magnam sunt iste saepe quia iusto
+                deleniti porro?</p>
+            <div class="section-link">
+                <a href="#" class="explore-more">add
+                    to shopping list</a>
+                <div></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+    .product-item {
+        .cont {
+            width: 290px;
+            padding-bottom: 80px;
+
+            .products-img {
+                width: 290px;
+                height: 300px;
+                position: relative;
+
+                img {
+                    // position: absolute;
+                    width: 290px;
+                    height: 300px;
+                }
+
+                &::before {
+                    position: absolute;
+                    content: url(../img/freame-black.png);
+                    right: 6px;
+                    top: 6px;
+                }
+            }
+
+            .h4 {
+                padding-top: 16px;
+                margin-bottom: unset;
+                text-transform: capitalize;
+            }
+
+            small {
+                font-weight: $muli-bold;
+                font-size: 12px;
+                color: $froly;
+                font-family: $muli-bold;
+                text-transform: capitalize;
+                padding: 2px 0;
+            }
+
+            p {
+                font-size: 14px;
+                font-weight: $muli-light;
+                font-family: $muli;
+                // color: #fff;
+            }
+
+            .section-link {
+                z-index: 3;
+
+                a {
+                    color: $mauive;
+                    font-size: 18px;
+                    font-weight: $josefin-regular;
+                }
+
+                div {
+                    background: $tana;
+                    width: 135px;
+                    height: 20px;
+                }
+            }
+        }
+    }
