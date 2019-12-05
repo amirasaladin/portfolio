@@ -94,17 +94,6 @@ $('.carousel-item', '.show-neighbors').each(function(){
 });
 // end of sectors carousel
 
-var docWidth = document.documentElement.offsetWidth;
-
-[].forEach.call(
-  document.querySelectorAll('*'),
-  function(el) {
-    if (el.offsetWidth > docWidth) {
-      console.log(el);
-    }
-  }
-);
-
 // JS (menu toggle)
 
 $(document).ready(function(){
